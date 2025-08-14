@@ -20,6 +20,7 @@ type Configuration struct {
 	PaymailDomainsValidationDisabled bool            `json:"paymail_domains_validation_disabled"`
 	Port                             int             `json:"port"`
 	Prefix                           string          `json:"prefix"`
+	Domain                           string          `json:"domain"`
 	SenderValidationEnabled          bool            `json:"sender_validation_enabled"`
 	GenericCapabilitiesEnabled       bool            `json:"generic_capabilities_enabled"`
 	P2PCapabilitiesEnabled           bool            `json:"p2p_capabilities_enabled"`

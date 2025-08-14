@@ -2,9 +2,10 @@ package server
 
 import (
 	"fmt"
-	"github.com/bitcoin-sv/go-paymail/errors"
 	"net/http"
 	"strings"
+
+	"github.com/bitcoin-sv/go-paymail/errors"
 
 	"github.com/gin-gonic/gin"
 
@@ -132,19 +133,13 @@ func _addNestedCapabilities(base NestedCapabilitiesMap, newCaps NestedCapabiliti
 func (c *Configuration) showCapabilities(context *gin.Context) {
 	// Check the host (allowed, and used for capabilities response)
 	// todo: bake this into middleware? This is protecting the "req" host name (like CORs)
-	host := ""
-	if context.Request.URL.IsAbs() || len(context.Request.URL.Host) == 0 {
-		host = context.Request.Host
-	} else {
-		host = context.Request.URL.Host
-	}
 
-	if !c.IsAllowedDomain(host) {
+	if !c.IsAllowedDomain(c.Domain) {
 		errors.ErrorResponse(context, errors.ErrDomainUnknown, c.Logger)
 		return
 	}
 
-	capabilities, err := c.EnrichCapabilities(host)
+	capabilities, err := c.EnrichCapabilities(c.Domain)
 	if err != nil {
 		errors.ErrorResponse(context, err, c.Logger)
 		return
