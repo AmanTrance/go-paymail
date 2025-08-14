@@ -4,7 +4,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/bitcoin-sv/go-paymail"
+	"github.com/AmanTrance/go-paymail"
 )
 
 func main() {

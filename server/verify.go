@@ -1,11 +1,11 @@
 package server
 
 import (
-	"github.com/bitcoin-sv/go-paymail/errors"
+	"github.com/AmanTrance/go-paymail/errors"
 	"github.com/gin-gonic/gin"
 	"net/http"
 
-	"github.com/bitcoin-sv/go-paymail"
+	"github.com/AmanTrance/go-paymail"
 )
 
 // verifyPubKey will return a response if the pubkey matches the paymail given

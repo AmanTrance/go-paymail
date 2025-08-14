@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bitcoin-sv/go-paymail/logging"
+	"github.com/AmanTrance/go-paymail/logging"
 
-	"github.com/bitcoin-sv/go-paymail"
+	"github.com/AmanTrance/go-paymail"
 
 	bsm "github.com/bitcoin-sv/go-sdk/compat/bsm"
 	ec "github.com/bitcoin-sv/go-sdk/primitives/ec"

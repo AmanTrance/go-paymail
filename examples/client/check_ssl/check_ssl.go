@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/bitcoin-sv/go-paymail"
+	"github.com/AmanTrance/go-paymail"
 )
 
 func main() {

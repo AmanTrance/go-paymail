@@ -6,7 +6,7 @@ import (
 
 	"github.com/go-resty/resty/v2"
 
-	"github.com/bitcoin-sv/go-paymail/interfaces"
+	"github.com/AmanTrance/go-paymail/interfaces"
 )
 
 // ClientInterface is the Paymail client interface

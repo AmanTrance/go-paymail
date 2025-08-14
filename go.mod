@@ -1,4 +1,4 @@
-module github.com/bitcoin-sv/go-paymail
+module github.com/AmanTrance/go-paymail
 
 go 1.24.0
 

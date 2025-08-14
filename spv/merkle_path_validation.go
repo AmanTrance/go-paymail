@@ -3,7 +3,7 @@ package spv
 import (
 	"context"
 
-	"github.com/bitcoin-sv/go-paymail/beef"
+	"github.com/AmanTrance/go-paymail/beef"
 )
 
 func verifyMerkleRoots(ctx context.Context, dBeef *beef.DecodedBEEF, provider MerkleRootVerifier) error {

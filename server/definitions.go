@@ -3,7 +3,7 @@ package server
 import (
 	"time"
 
-	"github.com/bitcoin-sv/go-paymail"
+	"github.com/AmanTrance/go-paymail"
 )
 
 // Server default values

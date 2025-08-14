@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/bitcoin-sv/go-paymail/beef"
+	"github.com/AmanTrance/go-paymail/beef"
 )
 
 /*

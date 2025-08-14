@@ -7,9 +7,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/bitcoin-sv/go-paymail/logging"
+	"github.com/AmanTrance/go-paymail/logging"
 
-	"github.com/bitcoin-sv/go-paymail/server"
+	"github.com/AmanTrance/go-paymail/server"
 )
 
 func main() {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/bitcoin-sv/go-paymail"
+	"github.com/AmanTrance/go-paymail"
 	"log"
 )
 
