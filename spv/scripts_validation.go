@@ -4,8 +4,8 @@ import (
 	"github.com/AmanTrance/go-paymail/beef"
 	"github.com/AmanTrance/go-paymail/errors"
 
-	interpreter "github.com/bitcoin-sv/go-sdk/script/interpreter"
-	sdk "github.com/bitcoin-sv/go-sdk/transaction"
+	interpreter "github.com/bsv-blockchain/go-sdk/script/interpreter"
+	sdk "github.com/bsv-blockchain/go-sdk/transaction"
 )
 
 func validateScripts(tx *sdk.Transaction, inputTxs []*beef.TxData) error {

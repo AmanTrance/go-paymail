@@ -1,14 +1,15 @@
 package server
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 // index basic request to /
 // nolint: revive // do not check for unused param required by interface
 func index(c *gin.Context) {
-	responseData := map[string]interface{}{"message": "Welcome to the Paymail Server ✌(◕‿-)✌"}
+	responseData := map[string]any{"message": "Welcome to the Paymail Server ✌(◕‿-)✌"}
 
 	c.Header("Content-Type", "application/json")
 	c.JSON(http.StatusOK, responseData)

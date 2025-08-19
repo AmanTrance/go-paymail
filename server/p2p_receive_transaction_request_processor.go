@@ -10,9 +10,9 @@ import (
 	"github.com/AmanTrance/go-paymail"
 	"github.com/AmanTrance/go-paymail/beef"
 
-	bsm "github.com/bitcoin-sv/go-sdk/compat/bsm"
-	script "github.com/bitcoin-sv/go-sdk/script"
-	sdk "github.com/bitcoin-sv/go-sdk/transaction"
+	bsm "github.com/bsv-blockchain/go-sdk/compat/bsm"
+	script "github.com/bsv-blockchain/go-sdk/script"
+	sdk "github.com/bsv-blockchain/go-sdk/transaction"
 )
 
 type p2pReceiveTxReqPayload struct {

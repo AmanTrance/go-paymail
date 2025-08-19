@@ -3,8 +3,8 @@ package paymail
 import (
 	"fmt"
 
-	bsm "github.com/bitcoin-sv/go-sdk/compat/bsm"
-	primitives "github.com/bitcoin-sv/go-sdk/primitives/ec"
+	bsm "github.com/bsv-blockchain/go-sdk/compat/bsm"
+	primitives "github.com/bsv-blockchain/go-sdk/primitives/ec"
 )
 
 /*
@@ -80,5 +80,5 @@ func (s *SenderRequest) Sign(privateKey string) ([]byte, error) {
 }
 
 func prepareMessage(senderRequest *SenderRequest) []byte {
-	return []byte(fmt.Sprintf("%s%d%s%s", senderRequest.SenderHandle, senderRequest.Amount, senderRequest.Dt, senderRequest.Purpose))
+	return fmt.Appendf(nil, "%s%d%s%s", senderRequest.SenderHandle, senderRequest.Amount, senderRequest.Dt, senderRequest.Purpose)
 }

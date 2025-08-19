@@ -7,7 +7,7 @@ import (
 
 	"github.com/AmanTrance/go-paymail/beef"
 
-	sdk "github.com/bitcoin-sv/go-sdk/transaction"
+	sdk "github.com/bsv-blockchain/go-sdk/transaction"
 )
 
 type MerkleRootVerifier interface {
